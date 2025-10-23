@@ -66,7 +66,7 @@ sagebot-rag/
 
 1️⃣ **Clonar o repositório**
 ```bash
-git clone https://github.com/seuusuario/sagebot-rag.git
+git clone https://github.com/Marioolimaa/LSE_IA.git
 cd sagebot-rag
 ```
 
