@@ -1,0 +1,123 @@
+# ============================================
+# 🐍 Python base
+# ============================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.spec
+dist/
+build/
+
+# ============================================
+# 🧱 Ambientes virtuais
+# ============================================
+venv/
+.venv/
+env/
+.env
+.env.*
+*.env
+site-packages/
+pip-wheel-metadata/
+
+# ============================================
+# 🧠 Dados e índices do RAG / FAISS / Embeddings
+# ============================================
+data/
+artifacts/
+*.faiss
+*.pkl
+*.npz
+*.npy
+*.csv
+*.jsonl
+*.log
+
+# ============================================
+# 📄 Documentação e exemplos SageMaker
+# ============================================
+sagemaker_documentation/
+notebooks/
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+
+# ============================================
+# 🧰 Streamlit
+# ============================================
+.streamlit/
+.streamlit_cache/
+.streamlit/secrets.toml
+.streamlit/config.toml
+.streamlit/*.json
+streamlit_app.log
+
+# ============================================
+# 🐋 Docker
+# ============================================
+Dockerfile~
+*.pid
+*.tar
+*.bak
+*.orig
+*.tmp
+*.swp
+.dockerignore
+
+# ============================================
+# 🧪 Testes e relatórios
+# ============================================
+.coverage
+htmlcov/
+pytest_cache/
+.tox/
+.mypy_cache/
+__coverage__/
+
+# ============================================
+# 🤖 Modelos e checkpoints de IA
+# ============================================
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.onnx
+*.bin
+
+# ============================================
+# 📤 Saídas, relatórios e cache
+# ============================================
+outputs/
+uploads/
+results/
+reports/
+logs/
+cache/
+*.log
+*.out
+
+# ============================================
+# 🧭 IDEs e sistema operacional
+# ============================================
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# ============================================
+# 🧩 Arquivos temporários e diversos
+# ============================================
+*.ini
+*.cfg
+*.toml
+*.manifest
+*.dll
+*.exe
