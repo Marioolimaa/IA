@@ -1,0 +1,19 @@
+services:
+  sagebot:
+    # Constrói a imagem a partir do Dockerfile no diretório atual
+    build: .
+    # Nomeia a imagem para referência futura
+    image: sagebot:latest
+    # Nome do contêiner para fácil identificação
+    container_name: sagebot_app
+    # Mapeia a porta 8501 do host para a 8501 do contêiner
+    ports:
+      - "8501:8501"
+    # Carrega as variáveis de ambiente do arquivo .env
+    env_file:
+      - .env
+    # Monta o volume para persistir os índices do RAG
+    volumes:
+      - ./data:/app/data
+    # Reinicia o contêiner automaticamente, a menos que seja parado manualmente
+    restart: unless-stopped

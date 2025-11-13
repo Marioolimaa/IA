@@ -1,14 +1,14 @@
 import streamlit as st
-#from langchain_community.memory import ConversationBufferMemory
+
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_openai import ChatOpenAI
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate,MessagesPlaceholder
-from loader import *
-from rag import *
-from progress import *
-from work_rag import *
-from work_rag import carregar_indice_existente
+from sagebot.loader import *
+from sagebot.rag import *
+from sagebot.progress import *
+from sagebot.work_rag import *
+from sagebot.work_rag import carregar_indice_existente
 import os
 os.environ.setdefault("USER_AGENT", "SageBot/1.0 (Streamlit)")
 
@@ -24,11 +24,8 @@ CONFIG_MODELOS ={'Groq': {'modelos': ['llama-3.1-8b-instant', 'llama-3.3-70b-ver
                   'OpenAI': {'modelos': [ 'gpt-4o', 'gpt-4.1-nano'],
                              'chat': ChatOpenAI}}
 
-#MEMORIA = ConversationBufferMemory()
 if "memoria" not in st.session_state:
    st.session_state["memoria"] = []
-#MEMORIA.chat_memory.add_user_message("Iniciando a conversa.")
-#MEMORIA.chat_memory.add_ai_message("Olá! Como posso ajudar você hoje?")
 
 MENSAGENS_EXEMPLOS =[
     ("ASSISTANT", "Olá, como você está? Estou aqui para lhe ajudar sobre duvidas da documentação da AWS"),

@@ -5,12 +5,12 @@ from streamlit.runtime.scriptrunner import add_script_run_ctx, get_script_run_ct
 from langchain.schema import Document
 
 # importe só o que usa (evita colisão de nomes)
-from rag import *
-from progress import * 
-from utils import *
+from .rag import *
+from .progress import * 
+from .utils import *
 from openai import APIConnectionError, RateLimitError, AuthenticationError
 from typing import List, Optional
-from rag import retriever as base_retriever
+from .rag import retriever as base_retriever
 
 
 BASE_INDEX = "data/index"
