@@ -33,10 +33,8 @@ Siga os passos abaixo para configurar e executar o SageBot em sua máquina local
 ### 2. Clone o Repositório
 
 ```bash
-git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
-cd SEU-REPOSITORIO
+git clone https://github.com/Marioolimaa/IA.git
 ```
-> **Nota**: Lembre-se de substituir `SEU-USUARIO/SEU-REPOSITORIO` pelo caminho correto do seu fork/clone.
 
 ### 3. Instale as Dependências
 
